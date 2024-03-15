@@ -20,7 +20,16 @@ body {
     }
 
     .mt-a-lot {
-        margin-top: 0;
+        margin-top: 1em !important;
+    }
+}
+
+@media (max-width: 496px) {
+    a {
+        /* padding: unset !important; */
+        word-break: break-all;
+        overflow-wrap: break-word;
+        white-space: nowrap;
     }
 }
 
