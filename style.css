@@ -12,6 +12,20 @@ body {
     --accent: #0600C2;
 }
 
+/* SECTION: Media Breakpoints */
+
+@media (max-width: 992px) {
+    .floating-card {
+        position: unset !important;
+    }
+
+    .mt-a-lot {
+        margin-top: 0;
+    }
+}
+
+/* END SECTION: Media Breakpoints */
+
 /* SECTION: Bootstrap Color Overwrites */
 
 .bg-dark {
@@ -93,7 +107,7 @@ textarea::placeholder {
 }
 
 .hero-img {
-    min-height: 80dvh;
+    min-height: 40dvw;
     /*
 
         Credit: https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css
@@ -107,7 +121,7 @@ textarea::placeholder {
 }
 
 .floating-card {
-    bottom: -30dvh;
+    top: 0dvh;
 }
 
 .floating-card p,
