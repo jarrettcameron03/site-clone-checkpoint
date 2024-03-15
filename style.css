@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+:root {
+    --primary: #3A31D8;
+    --secondary: #020024;
+    --dark: rgba(11, 11, 17);
+    --dark-emphasis: rgba(21, 21, 27);
+    --light: white;
+    --accent: #0600C2;
+}
+
+/* SECTION: Bootstrap Color Overwrites */
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.text-accent {
+    color: var(--accent) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.text-light {
+    color: var(--light) !important;
+}
+
+/* END SECTION: Boostrap Color Overwrites */
+
+.text-skeleton {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--light);
+}
+
+.bg-dark-emphasis {
+    background-color: var(--dark-emphasis);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+.contact-form input,
+textarea {
+    color: var(--light);
+    background-color: var(--dark) !important;
+    border: none !important;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+textarea::placeholder {
+    color: var(--light) !important;
+    /* !important because bootstrap hates me <3 */
+}
+
+.side-border {
+    border-left: 0.7em var(--primary) solid;
+}
+
+.hero-img {
+    min-height: 80dvh;
+    /*
+
+        Credit: https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css
+
+        This is such a cool trick, I kept trying to use bootstrap but you can use a linear gradient to apply a rgba value over an image and modify the alpha value to create an overlay! Brilliant.
+
+    */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.floating-card {
+    bottom: -30dvh;
+}
+
+.floating-card p,
+h4 {
+    padding: 0.1em 0;
+    margin: 0.2em 0;
+}
+
+.reviews p {
+    line-height: 1.5em;
+}
+
+.mt-a-lot {
+    margin-top: 8em;
+}
+
+a {
+    color: var(--light);
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
